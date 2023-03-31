@@ -1,0 +1,50 @@
+.container {
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.box__container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+
+.countrie__box {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .box__container {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box__container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .box__container {
+    grid-template-columns: auto;
+  }
+}
