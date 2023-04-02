@@ -15,7 +15,6 @@ fetch("https://restcountries.com/v3.1/all")
       xCapital.textContent = `Capital: ${x.capital}`;
 
       const xPopulation = document.createElement("p");
-      // xPopulation.textContent = `Population: ${x.population}`;
 
       const populationString = String(x.population);
       if (populationString.length > 9) {
@@ -40,7 +39,7 @@ fetch("https://restcountries.com/v3.1/all")
         xPopulation.textContent = `Popu;ation: ${x.population}`;
       }
 
-      console.log(x.population);
+      console.log(x);
 
       const xBox = document.createElement("div");
       xBox.classList.add("countrie__box");
