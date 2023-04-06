@@ -39,7 +39,7 @@ fetch("https://restcountries.com/v3.1/all")
         xPopulation.textContent = `Popu;ation: ${x.population}`;
       }
 
-      console.log(x);
+      console.log(x.currencies);
 
       const xBox = document.createElement("div");
       xBox.classList.add("countrie__box");
